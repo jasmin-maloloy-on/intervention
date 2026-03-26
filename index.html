@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Personal Website</title>
+
+<style>
+body {
+    font-family: Times New Roman;
+    margin: 0;
+    background-color: #FFD1EC;
+    text-align: center;
+}
+
+header {
+    background-color: #FFD1EC;
+    color: white;
+    padding: 30px;
+}
+
+nav {
+    background-color: #FF7AAC;
+    padding: 20px;
+}
+
+nav button {
+    margin: 12px;
+    padding: 25px;
+    border: none;
+    background: #F5C5CE;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #fff0f5;
+}
+
+.page {
+    display: none;
+    padding: 30px;
+}
+
+.active {
+    display: block;
+}
+
+.profile {
+    width: 500px;
+    border-radius: 45%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background: #ffe4e1;
+    padding: 25px;
+    border-radius: 25px;
+    width: 250px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Hi, I'm Jasmin</h1>
+</header>
+
+<nav>
+    <button onclick="showPage('about')">About</button>
+    <button onclick="showPage('hobbies')">Hobbies</button>
+    <button onclick="showPage('js')">Js</button>
+</nav>
+
+<div id="about" class="page active">
+    <h2>About Me </h2>
+    <img src="https://i.ibb.co/chr14f6d/webcam-toy-photo89.jpg" class="profile">
+    <p>I am Jasmin but you can call me Jaja. I am a hardworking and motivated student who is always willing to learn new things. I enjoy exploring new ideas and improving my skills, especially in areas related to programming. Even though I struggle at times, I do my best to understand and keep practicing. I am also a friendly and responsible person who works well with others and values teamwork. I believe in doing my best in everything I do, and I am always striving to grow and become a better version of myself.</p>
+</div>
+
+
+<div id="hobbies" class="page">
+    <h2>My Hobbies</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://i.ibb.co/h18FmV4x/a.jpg" class="profile">
+            <p>Listening to music is one of my hobbies because it helps me relax and express my emotions.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/7t3rWX9g/d.jpg">
+            <p>Watching movies is my hobby because it entertains me and allows me to experience different stories and ideas.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/PZZ8DdgD/q.webp">
+            <p>Sleeping is also one of my hobbies because it helps me rest, recharge, and feel more energized.</p>
+        </div>
+    </div>
+</div>
+
+<div id="js" class="page">
+    <h2>cute ba ako o hindi?</h2>
+    <button onclick="changeBg()">Click me 💗</button>
+</div>
+
+<footer>
+    <p>Made by Jaja ganda </p>
+</footer>
+
+<script>
+function showPage(pageId) {
+    let pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+}
+
+function changeBg() {
+    document.body.style.background = "#ffe6f0";
+    alert("SOBRANG CUTE SYEMPRE");
+}
+</script>
+
+</body>
+</html>
