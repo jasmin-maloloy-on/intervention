@@ -42,7 +42,7 @@ nav button:hover {
 .profile {
     width: 300px;
     border-radius: 45%;
-    text-align: right;
+    text-align: justify;
 }
 
 .cards {
