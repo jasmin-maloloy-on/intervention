@@ -1,0 +1,72 @@
+body {
+    font-family: Times New Roman;
+    margin: 0;
+    background-color: #FFD1EC;
+    text-align: center;
+}
+
+header {
+    background-color: #FFD1EC;
+    color: white;
+    padding: 30px;
+}
+
+nav {
+    background-color: #FF7AAC;
+    padding: 20px;
+}
+
+nav button {
+    margin: 12px;
+    padding: 25px;
+    border: none;
+    background: #F5C5CE;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #fff0f5;
+}
+
+.page {
+    display: none;
+    padding: 30px;
+}
+
+.active {
+    display: block;
+}
+
+.profile {
+    width: 500px;
+    border-radius: 45%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background: #ffe4e1;
+    padding: 25px;
+    border-radius: 25px;
+    width: 250px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
