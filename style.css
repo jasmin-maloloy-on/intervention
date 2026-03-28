@@ -66,8 +66,8 @@ nav button:hover {
 footer {
     background-color: #ffb6c1;
     color: white;
-    padding: 70px;
+    padding: 90px;
     position: fixed;
     bottom: 0;
-    width: 70%;
+    width: 90%;
 }
